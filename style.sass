@@ -1,0 +1,63 @@
+*
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+
+.playground
+  width: 581px
+  margin: 0 auto
+  display: flex
+  flex-wrap: wrap
+.card
+  background-color: gray
+  border: 2px solid black
+  width: 120px
+  height: 200px
+  margin-right: 25px
+  margin-top: 25px
+  display: flex
+  justify-content: center
+  align-items: center
+  color: gray
+  font-size: 30px
+  font-weight: bold
+  user-select: none
+  transform: rotateY(180deg)
+  transition: 0.5s all
+
+
+.active
+  color: black
+  transform: perspective(800px) rotateY(0deg)
+  transition: 0.5s all
+
+.completed
+  background-color: green
+
+.winMessage
+  position: absolute
+  left: 18%
+  top: 30%
+  color: green
+  font-size: 200px
+  background-color: black
+  display: none
+  text-transform: uppercase
+  z-index: 1000
+    
+.form
+  position: fixed
+  top: 20px
+  left: 10px
+  width: 250px
+
+  .time
+    display: block
+    width: fit-content
+    margin-top: 15px
+    font-size: 30px
+    margin: 0 auto
+
+.recordTable
+  list-style: none
+  padding: 0
